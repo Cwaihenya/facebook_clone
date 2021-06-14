@@ -24,7 +24,7 @@ def create
   end
   def user_params
     params.require(:user).permit(:name, :email, :password,
-                                 :password_confirmation)
+                                 :password_confirmation, :photo)
 end
 def show
    @user = User.find(params[:id])
